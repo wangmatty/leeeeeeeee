@@ -45,6 +45,7 @@ public class TreeNode {
 }
 
 // https://iowiki.com/static/cimg/data_structures_algorithms/binary_search_tree.jpg
+
 var treeDemo: TreeNode {
     let head = TreeNode(27)
     
@@ -68,6 +69,8 @@ var treeDemo: TreeNode {
     return head
     
 }
+
+var treeDemoBST = treeDemo
 
 // https://www.geeksforgeeks.org/binary-tree-data-structure/
 var treeDemo2: TreeNode {
