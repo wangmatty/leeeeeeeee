@@ -19,6 +19,6 @@ struct ContentView: View {
 
 extension ContentView {
     func run() {
-        Solution98().submit()
+        Solution72().submit()
     }
 }
