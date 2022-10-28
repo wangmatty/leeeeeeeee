@@ -189,7 +189,7 @@ func invertTree2(_ root: TreeNode?) {
 
 func convertTree2LinkedList(_ root: TreeNode) {
     
-    var link = LinkedList<Int>()
+    let link = LinkedList<Int>()
     traverse(root)
     print(link)
     
@@ -211,26 +211,26 @@ func findRepeatTree(_ root: TreeNode) {
     let result = LinkedList<String>()
     _ = traverse(root)
     print(result)
-    
-    
-    func traverse(_ root: TreeNode?) -> Int {
+
+
+    func traverse(_ root: TreeNode?) -> String {
         guard let root = root else {
             return "#"
         }
-        
+
         let left = traverse(root.left!)
         let right = traverse(root.right!)
         
-        let subTree = left + "," + right + "," + "\(root.val)"
-        
+        let subTree = "\(left),\(right),\(root.val)"
+
         let freq = memo[subTree, default: 0]
         if freq == 1 {
-            result.append(value: root.val)
+            result.append(value: "\(root.val)")
 
         }
-        
+
         memo[subTree] = freq + 1
         return subTree
     }
-    
+
 }

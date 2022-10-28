@@ -4,6 +4,7 @@ struct ContentView: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Leetcode").font(.title)
+            Spacer()
             Button("Run Again") {
                 run()
             }
