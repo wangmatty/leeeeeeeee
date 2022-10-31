@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol Solution {
-    func submit()
+@objc protocol Solution {
+    @objc optional func submit()
 }
