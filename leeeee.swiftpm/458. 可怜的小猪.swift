@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Swift
 
 
 //有 buckets 桶液体，其中 正好有一桶 含有毒药，其余装的都是水。它们从外观看起来都一样。为了弄清楚哪只水桶含有毒药，你可以喂一些猪喝，通过观察猪是否会死进行判断。不幸的是，你只有 minutesToTest 分钟时间来确定哪桶液体是有毒的。
@@ -28,7 +29,7 @@ class Solution458: Solution {
         // base ^ ans >= buckets
         // ans >= log(buckets) / log(base)
         
-        let result = log(buckets)/log(base)
+        let result = log(Double(buckets))/log(Double(base))
         return Int(ceil(result))
 
     }

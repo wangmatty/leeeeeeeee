@@ -60,6 +60,7 @@ class Solution1054: Solution {
             i += 2
         }
         
+        return []
 
     }
 }

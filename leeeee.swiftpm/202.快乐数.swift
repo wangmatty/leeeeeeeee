@@ -2,7 +2,7 @@
 // 也可能是无限循环但始终变不到 1。如果可以变为 1，那么这个数就是快乐数。
 // “循环”这是关键，说明有重复的
 
-
+// TODO: 还没完成
 class Solution202: Solution {
   func submit() {
   }
@@ -11,21 +11,21 @@ class Solution202: Solution {
 
       var hash:[String: Bool] = [:]
 
-      var str = String(n))
+      var str = String(n)
       hash[str] = true
 
-      while true {
-          for (index,value) in str.enumerated() {
-              result = result + value * value
-          }
-          str = String(result)
-
-          if hash[str] == true {
-              return false
-          } else {
-              hash[str] = true
-          }
-      }
+//      while true {
+//          for (index,value) in str.enumerated() {
+//              result = result + value * value
+//          }
+//          str = String(result)
+//
+//          if hash[str] == true {
+//              return false
+//          } else {
+//              hash[str] = true
+//          }
+//      }
 
       return true
   }
